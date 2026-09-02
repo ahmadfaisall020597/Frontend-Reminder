@@ -36,5 +36,6 @@ jobs:
             -scheme ReminderApps \
             -configuration Debug \
             -sdk iphonesimulator \
+            -arch arm64 \
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO
