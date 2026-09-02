@@ -39,3 +39,9 @@ jobs:
             -arch arm64 \
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO
+
+      - name: Upload iOS Simulator App
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-simulator-app
+          path: ios/build/Build/Products/Debug-iphonesimulator/ReminderApps.app
